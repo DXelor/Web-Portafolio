@@ -1,0 +1,31 @@
+@font-face{
+    font-family: "AlexBrush";
+    src: url("fonts/AlexBrush.ttf");
+}
+
+@font-face{
+    font-family: "Aqilo";
+    src: url("fonts/Aquilo.ttf");
+}
+
+@font-face{
+    font-family: "Lobster";
+    src: url("fonts/Lobster.ttf");
+}
+/*Generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: aliceblue;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+body{
+    font-family: "Lobster", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: url("../img/zeller.jpg");
+    position: fixed;
+}
