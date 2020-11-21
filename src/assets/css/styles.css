@@ -92,10 +92,18 @@ header a:hover{
 #content{
     min-height: 700px;
     width: 75%;
-    margin: 0 auto;
+    margin: 0px auto;
     box-shadow: 0 0 40px black;
     background: rgba(133, 210, 216, 0.5);
     padding-top: 150px;
     border-left: 2px solid black;
     border-right: 2px solid black;
+}
+
+/*Pie de Pagina*/
+footer{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(250, 250, 250, 0.5);
 }
