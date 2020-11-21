@@ -41,21 +41,23 @@ header{
     text-transform: uppercase;
 }
 header ul{
-    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
     width: 40%;
     height: inherit;
     margin: 0px auto;
 }
 
 header ul li {
-    display: inline-block;
+    display: inline-flex;
     margin: 0px auto;
     text-align: center;
-    line-height: 55px;
+    line-height: 90px;
 }
 
-header a{
-    display: block;
+li a{
     padding-right: 20px;
     padding-left: 20px;
     height: inherit;
@@ -66,7 +68,7 @@ header a{
 
 header a:hover, .actived{
     box-shadow:  inset 0 0 5px white;
-    border-radius: 50px;
+    border-radius: 60px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -106,4 +108,49 @@ footer{
     margin: 0px auto;
     padding-top: 15px;
     color: rgba(250, 250, 250, 0.5);
+}
+
+
+/*sobre Mi*/
+
+#title{
+    width: 70%;
+    color: seashell;
+    text-shadow: 0 0 3px #01b947, 0 0 5px #23a3ca;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#title h1{
+    font-family: "AlexBrush", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    border-bottom: 1px solid slategray;
+}
+
+#title h2{
+    font-size: 25px;
+    color: thistle;
+    margin-top: 50px;
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+.about h2{
+    color: rgb(229, 230, 223);
+    text-shadow: 0 0 3px rgb(1, 117, 27);
+    border-bottom: 1px solid slategray;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    color: rgb(237, 238, 224);
+    text-shadow: 0 0 3px rgb(1, 117, 27);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
 }
