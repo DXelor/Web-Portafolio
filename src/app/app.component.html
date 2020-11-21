@@ -1,7 +1,25 @@
-<h1>Proyecto de Angular</h1>
-<ul>  <li><a [routerLink]="['/sobre-mi']">Sobre Mi</a></li>
-  <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
-  <li><a [routerLink]="['/crear-proyecto']">Crear proyecto</a></li>
-  <li><a [routerLink]="['/contacto']">Contacto</a></li>
-</ul>
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/sobre-mi']">Sobre Mi</a></li>
+        <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
+        <li id="logo"><a href="#">DX</a></li>
+        <li><a [routerLink]="['/crear-proyecto']">Crear proyecto</a></li>
+        <li><a [routerLink]="['/contacto']">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="content">
+    <router-outlet></router-outlet>
+  </section>
+  <footer>Master en JS de DXelor</footer>
+  </body>
+</html>

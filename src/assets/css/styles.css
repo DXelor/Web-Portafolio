@@ -12,20 +12,90 @@
     font-family: "Lobster";
     src: url("fonts/Lobster.ttf");
 }
+
+
 /*Generales*/
 *{
     margin: 0px;
     padding: 0px;
 }
-
-h1{
-    color: aliceblue;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-}
-
 body{
     font-family: "Lobster", Arial, Helvetica, sans-serif;
     font-size: 20px;
     background: url("../img/zeller.jpg");
+    background-attachment: fixed;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*Barra de navegacion / cabecera*/
+
+header{
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: rgba(53, 255, 55, 0.3);
     position: fixed;
+    text-transform: uppercase;
+}
+header ul{
+    display: block;
+    width: 40%;
+    height: inherit;
+    margin: 0px auto;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 55px;
+}
+
+header a{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a:hover{
+    box-shadow:  inset 0 0 5px white;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* LOGO */
+#logo{
+    font-family: "Aqilo", Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: aliceblue;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+#logo a{
+    transition:color 400ms, trasform 400ms;
+}
+
+#logo a:hover{
+    box-shadow: 0 0 0;
+    background: transparent;
+    transform: scale(1.40,1.40);
+}
+
+/*Contenedor Principal*/
+
+#content{
+    min-height: 700px;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 0 40px black;
+    background: rgba(133, 210, 216, 0.5);
+    padding-top: 150px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
