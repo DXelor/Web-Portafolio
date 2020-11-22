@@ -154,3 +154,53 @@ article.about{
     padding-bottom: 30px;
     text-align: justify;
 }
+
+/* Seccion con formulario */
+
+.container {
+    padding-left: 30px;
+}
+
+.container h2{
+    display: block;
+    border-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/*formularios*/
+
+form{
+    width: 50%;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 80%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"]{
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    margin-top: 15px;
+    color: aliceblue;
+    background: rgb(7, 88, 25);
+    box-shadow: 0 0 3px #68ff54, 0 0 5px #89ffff;
+    cursor: pointer;
+}
+form button:hover,
+form input[type="submit"]:hover{
+    background: rgb(27, 131, 50);
+    box-shadow: 0 0 3px #b8eeb1, 0 0 5px #65b1f8;
+}
