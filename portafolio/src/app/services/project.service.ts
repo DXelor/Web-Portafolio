@@ -16,4 +16,11 @@ export class ProjectService{
     testService(){
         return 'servicio corriendo';
     }
+
+    saveProject(project: Project){
+        let params = JSON.stringify(project);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+        return this._http.post(this.url+'save-project', params, {headers: headers});
+    }
 }

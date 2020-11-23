@@ -60,3 +60,26 @@ p span{
     color: cornsilk;
     font-size: 13px;
 }
+
+/*alertas*/
+
+.message{
+    width: 50%;
+    margin: 8px;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+.success{
+    background-color: darkgreen;
+    color: cornsilk;
+}
+
+.message a{
+    color: cornsilk;
+}
+
+.failed{
+    background-color: crimson;
+    color: cornsilk;
+}
