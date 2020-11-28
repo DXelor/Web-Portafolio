@@ -17,7 +17,7 @@ export class ProjectService{
         return 'servicio corriendo';
     }
 
-    saveProject(project: Project){
+    saveProject(project: Project): Observable<any>{
         let params = JSON.stringify(project);
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
