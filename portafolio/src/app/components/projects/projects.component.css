@@ -1,0 +1,46 @@
+/*Pagina de proyectos*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h2 {
+    display: flex;
+    align-self: center;
+    color: aliceblue;
+    font-size: 55px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px rgb(35, 190, 190);
+}
+
+.project {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: azure;
+    text-shadow: 0 0 3px rgb(228, 137, 27);
+}
+
+.project img {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(112, 27, 105);
+}
+
+.project p {
+    margin-bottom: 5px;
+}
+
+.project:hover {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+}

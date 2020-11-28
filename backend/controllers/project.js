@@ -101,7 +101,7 @@ var controller = {
     getImageFile: function(req, res) {
         var image = req.params.image;
         var pathFile = './uploads/' + image;
-        fs.existsSync(pathFile, (exists) => {
+        fs.exists(pathFile, (exists) => {
             if (exists) {
                 return res.sendFile(path.resolve(pathFile))
             } else {

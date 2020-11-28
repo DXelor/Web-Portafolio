@@ -1,47 +1,82 @@
-@font-face{
+@font-face {
     font-family: "AlexBrush";
     src: url("fonts/AlexBrush.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "Aqilo";
     src: url("fonts/Aquilo.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "Lobster";
     src: url("fonts/Lobster.ttf");
 }
 
+@font-face {
+    font-family: "Cav";
+    src: url("fonts/Cav.ttf");
+}
+
+@font-face {
+    font-family: "Cou";
+    src: url("fonts/Cou.ttf");
+}
+
+@font-face {
+    font-family: "Pari";
+    src: url("fonts/Pari.ttf");
+}
+
+@font-face {
+    font-family: "Sati";
+    src: url("fonts/Sati.ttf");
+}
+
+@font-face {
+    font-family: "Star";
+    src: url("fonts/Star.ttf");
+}
+
+@font-face {
+    font-family: "Tang";
+    src: url("fonts/Tang.ttf");
+}
+
 
 /*Generales*/
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     font-family: "Lobster", Arial, Helvetica, sans-serif;
     font-size: 20px;
     background: url("../img/zeller.jpg");
     background-attachment: fixed;
 }
-.clearfix{
+
+.clearfix {
     float: none;
     clear: both;
 }
 
+
 /*Barra de navegacion / cabecera*/
 
-header{
+header {
     display: block;
     width: 100%;
     height: 90px;
-    background: rgba(9, 99, 10, 0.8);
+    background: rgba(15, 121, 112, 0.8);
     box-shadow: inset 0 0 10px #f8f8f8, 0 0 5px #0000FF;
     position: fixed;
     text-transform: uppercase;
 }
-header ul{
+
+header ul {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -58,7 +93,7 @@ header ul li {
     line-height: 90px;
 }
 
-li a{
+li a {
     padding-right: 20px;
     padding-left: 20px;
     height: inherit;
@@ -67,32 +102,37 @@ li a{
     transition: all 300ms;
 }
 
-header a:hover, .actived{
-    box-shadow:  inset 0 0 5px white;
+header a:hover,
+.actived {
+    box-shadow: inset 0 0 5px white;
     border-radius: 60px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 /* LOGO */
-#logo{
+
+#logo {
     font-family: "Aqilo", Arial, Helvetica, sans-serif;
     font-size: 45px;
     color: aliceblue;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
-#logo a{
-    transition:color 400ms, trasform 400ms;
+
+#logo a {
+    transition: color 400ms, trasform 400ms;
 }
 
-#logo a:hover{
+#logo a:hover {
     box-shadow: 0 0 0;
     background: transparent;
-    transform: scale(1.40,1.40);
+    transform: scale(1.40, 1.40);
 }
+
 
 /*Contenedor Principal*/
 
-#content{
+#content {
     min-height: 700px;
     width: 75%;
     margin: 0px auto;
@@ -102,8 +142,10 @@ header a:hover, .actived{
     border-right: 2px solid black;
 }
 
+
 /*Pie de Pagina*/
-footer{
+
+footer {
     width: 75%;
     margin: 0px auto;
     padding-top: 15px;
