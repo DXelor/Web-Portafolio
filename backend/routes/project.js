@@ -8,7 +8,8 @@ var router = express.Router();
 
 //MIDDLEWARE
 var multipart = require('connect-multiparty');
-var multipartMiddleware = multipart({uploadDir: './uploads'})
+const { getImageFile } = require('../controllers/project');
+var multipartMiddleware = multipart({ uploadDir: './uploads' })
 
 router.get('/home', ProjectController.home);
 router.post('/test', ProjectController.test);
@@ -18,5 +19,7 @@ router.get('/projects', ProjectController.getProjects);
 router.put('/project/:id', ProjectController.updateProject);
 router.delete('/project/:id', ProjectController.deleteProject);
 router.post('/upload-image/:id', multipartMiddleware, ProjectController.uploadImage);
+router.get('/get-image/:image', ProjectController.getImageFile);
+
 
 module.exports = router;
