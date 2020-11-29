@@ -54,7 +54,7 @@
 body {
     font-family: "Lobster", Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background: url("../img/zeller.jpg");
+    background: url("../img/jamie.jpg");
     background-attachment: fixed;
 }
 
@@ -96,7 +96,7 @@ header ul li {
 li a {
     padding-right: 20px;
     padding-left: 20px;
-    height: inherit;
+    height: 8vh;
     text-decoration: none;
     color: white;
     transition: all 300ms;
@@ -113,8 +113,10 @@ header a:hover,
 /* LOGO */
 
 #logo {
-    font-family: "Aqilo", Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-family: "Tang", Arial, Helvetica, sans-serif;
+    font-size: 78px;
+    font-weight: 500;
+    margin-top: 5px;
     color: aliceblue;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
@@ -126,7 +128,7 @@ header a:hover,
 #logo a:hover {
     box-shadow: 0 0 0;
     background: transparent;
-    transform: scale(1.40, 1.40);
+    transform: scale(1.27, 1.27);
 }
 
 

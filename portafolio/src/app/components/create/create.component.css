@@ -1,23 +1,26 @@
 /*formularios*/
 
-h2{
-    color: white;
-    color: transparent;
-    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.7);
-    width: 50%;
-    margin-left: 25px;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-form{
+h2 {
+    align-self: center;
+    font-size: 50px;
+    color: rgba(255, 228, 196, 0.404);
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.801);
+    margin-left: 25px;
+}
+
+form {
     width: 80%;
-    margin-left: 25px;
+    margin-left: 40px;
 }
 
-form label{
+form label {
     display: block;
+    color: rgba(250, 235, 215, 0.658);
     width: 70%;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -26,13 +29,13 @@ form label{
 form input[type="text"],
 form input[type="number"],
 form input[type="email"],
-form textarea{
+form textarea {
     width: 40%;
     padding: 5px;
 }
 
 form button,
-form input[type="submit"]{
+form input[type="submit"] {
     display: block;
     font-size: 17px;
     padding: 5px;
@@ -42,44 +45,50 @@ form input[type="submit"]{
     box-shadow: 0 0 3px #68ff54, 0 0 5px #89ffff;
     cursor: pointer;
 }
+
 form button:hover,
-form input[type="submit"]:hover{
+form input[type="submit"]:hover {
     background: rgb(27, 131, 50);
     box-shadow: 0 0 3px #b8eeb1, 0 0 5px #65b1f8;
 }
-form input[disabled]{
+
+form input[disabled] {
     background: rgb(170, 170, 170);
     box-shadow: 0 0 3px #0b0c0b, 0 0 5px #162b3f;
     cursor: not-allowed;
 }
-form input[disabled]:hover{
+
+form input[disabled]:hover {
     background: rgb(170, 170, 170);
     box-shadow: 0 0 3px #0b0c0b, 0 0 5px #162b3f;
 }
-p span{
+
+p span {
     color: cornsilk;
     font-size: 13px;
 }
 
+
 /*alertas*/
 
-.message{
+.message {
     width: 50%;
     margin: 8px;
     font-size: 15px;
     padding: 5px;
     border: 1px solid #eee;
 }
-.success{
+
+.success {
     background-color: darkgreen;
     color: cornsilk;
 }
 
-.message a{
+.message a {
     color: cornsilk;
 }
 
-.failed{
+.failed {
     background-color: crimson;
     color: cornsilk;
 }
