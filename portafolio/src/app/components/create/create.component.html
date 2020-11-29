@@ -1,7 +1,7 @@
 <div class="container">
     <h2>{{title}}</h2>
     <div class="message success" *ngIf="status == 'success'">
-        el proyecto se ah creado correctamente, puedes <a href="#">verlo aquí</a>
+        el proyecto se ah creado correctamente, puedes <a [routerLink]="['/proyecto', save_project._id]">verlo aquí</a>
     </div>
     <div class="message failed" *ngIf="status == 'failed'">
         el proyecto no se ah creado.
@@ -30,7 +30,7 @@
         </p>
         <p>
             <label for="year">Año de lanzamiento</label>
-            <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year"/>
+            <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year" />
         </p>
         <p>
             <label for="langs">lenguajes usados</label>
@@ -41,8 +41,8 @@
         </p>
         <p>
             <label for="image">imagen del proyecto</label>
-            <input type="file" name="image" placeholder="Subir Imagen" (change)="fileChangeEvent($event)"/>
+            <input type="file" name="image" placeholder="Subir Imagen" (change)="fileChangeEvent($event)" />
         </p>
-        <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid"/>
+        <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
     </form>
 </div>

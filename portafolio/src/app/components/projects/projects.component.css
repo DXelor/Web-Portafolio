@@ -16,13 +16,15 @@ h2 {
 }
 
 .project {
+    width: 330px;
     list-style: none;
     display: inline-flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 15px;
     margin-left: 25px;
     color: azure;
+    text-align: center;
     text-shadow: 0 0 3px rgb(228, 137, 27);
 }
 
@@ -30,7 +32,7 @@ h2 {
     width: 200px;
     height: 150px;
     display: flex;
-    margin: 25px;
+    margin: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgb(112, 27, 105);
 }
