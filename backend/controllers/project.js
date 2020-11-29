@@ -35,7 +35,6 @@ var controller = {
             return res.status(200).send({ project: projectStored });
         });
     },
-
     getProject: function(req, res) {
         var projectId = req.params.id;
 
@@ -97,7 +96,6 @@ var controller = {
             return res.status(200).send({ message: fileName })
         };
     },
-
     getImageFile: function(req, res) {
         var image = req.params.image;
         var pathFile = './uploads/' + image;
@@ -110,7 +108,21 @@ var controller = {
                 })
             }
         })
-    }
+    },
+    detailProject: function(req, res) {
+        var id = req.params.id;
+
+        Project.find({ _id: id }).exec((err, project) => {
+            if (err) {
+                return res.status(500).send({ message: "Error a la consulta" })
+            } else if (!project) {
+                return res.status(404).send({ message: "Proyecto no encontrado" })
+            } else {
+                return res.status(200).send({ project })
+            }
+        })
+    },
+
 };
 
 module.exports = controller;

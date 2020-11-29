@@ -6,6 +6,7 @@ var ProjectController = require('../controllers/project');
 
 var router = express.Router();
 
+
 //MIDDLEWARE
 var multipart = require('connect-multiparty');
 const { getImageFile } = require('../controllers/project');
@@ -20,6 +21,6 @@ router.put('/project/:id', ProjectController.updateProject);
 router.delete('/project/:id', ProjectController.deleteProject);
 router.post('/upload-image/:id', multipartMiddleware, ProjectController.uploadImage);
 router.get('/get-image/:image', ProjectController.getImageFile);
-
+router.get("/detalle-proyecto/:id", ProjectController.detailProject);
 
 module.exports = router;

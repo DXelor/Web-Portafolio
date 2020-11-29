@@ -1,6 +1,5 @@
-import { from } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { Global } from './global';
+import { Global }     from './global';
 
 @Injectable()
 export class UploadService{

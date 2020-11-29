@@ -1,6 +1,6 @@
 <div class="container">
     <h2>{{title}}</h2>
-    <div class="message success" *ngIf="status == 'success'">
+    <div class="message success" *ngIf="status == 'success' && save_project">
         el proyecto se ah creado correctamente, puedes <a [routerLink]="['/proyecto', save_project._id]">verlo aquí</a>
     </div>
     <div class="message failed" *ngIf="status == 'failed'">
