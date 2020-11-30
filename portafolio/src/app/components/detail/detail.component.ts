@@ -33,7 +33,8 @@ export class DetailComponent implements OnInit {
   getProject(id){
     this._projectService.getProject(id).subscribe(
       response =>{
-        this.project = response.project;
+        this.project = response.project[0
+        ];
       },error=> console.log(<any>error)
     )
 

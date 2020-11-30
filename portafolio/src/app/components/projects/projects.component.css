@@ -3,9 +3,40 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
+.project a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.project a:hover {
+    padding-bottom: 120px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.555), inset 0 0 50px rgba(255, 255, 255, 0.884);
+    background-color: rgba(0, 225, 241, 0.075);
+}
+
+.project img {
+    width: 150px;
+    height: 14vh;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(112, 27, 105);
+}
+
+.project {
+    display: inline-flex;
+    list-style: none;
+    color: azure;
+    text-align: center;
+    text-shadow: 0 0 3px rgb(228, 137, 27);
+}
+
+
+/* 
 h2 {
     display: flex;
     align-self: center;
@@ -15,34 +46,6 @@ h2 {
     text-shadow: 0 0 5px rgb(35, 190, 190);
 }
 
-.project {
-    width: 330px;
-    list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    margin-left: 25px;
-    color: azure;
-    text-align: center;
-    text-shadow: 0 0 3px rgb(228, 137, 27);
-}
-
-.project img {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    margin: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgb(112, 27, 105);
-}
-
 .project p {
     margin-bottom: 5px;
-}
-
-.project:hover {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.493);
-    cursor: pointer;
-}
+} */
