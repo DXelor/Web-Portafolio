@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 var ProjectSchema = Schema({
     name: String,
-    descripcion: String,
+    description: String,
     category: String,
     year: Number,
     langs: String,
