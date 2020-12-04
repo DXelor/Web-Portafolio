@@ -5,10 +5,10 @@ import { UploadService } from '../../services/upload.service';
 import { Global } from '../../services/global';
 
 @Component({
-	selector: 'app-create',
-	templateUrl: './create.component.html',
-	styleUrls: ['./create.component.css'],
-	providers: [ProjectService, UploadService]
+  selector: 'app-create',
+  templateUrl: './create.component.html',
+  styleUrls: ['./create.component.css'],
+  providers: [ProjectService, UploadService]
 })
 export class CreateComponent implements OnInit {
 

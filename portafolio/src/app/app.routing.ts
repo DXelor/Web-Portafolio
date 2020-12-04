@@ -1,4 +1,4 @@
-import { ModuleWithProviders } from '@angular/core';
+import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent }       from './components/about/about.component';
@@ -7,7 +7,7 @@ import { CreateComponent }      from './components/create/create.component';
 import { ContactComponent }     from './components/contact/contact.component';
 import { ErrorComponent }       from './components/error/error.component';
 import { DetailComponent }      from './components/detail/detail.component';
-import { EditComponent }      from './components/edit/edit.component';
+import { EditComponent }        from './components/edit/edit.component';
 
 
 const appRoutes: Routes = [
