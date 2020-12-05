@@ -147,6 +147,57 @@ header a:hover,
 }
 
 
+/*Formularios*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    align-self: center;
+    font-size: 40pt;
+    color: rgb(253, 152, 29);
+    text-shadow: 0 0 5px rgba(131, 10, 10, 0.822);
+    font-family: 'Cav', Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    color: blanchedalmond;
+    flex-direction: column;
+}
+
+form p {
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input {
+    width: 300px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 200px;
+    font-size: 17px;
+    padding: 10px;
+    margin-left: 40px;
+    color: antiquewhite;
+    background: rgba(0, 128, 0, 0.705);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: rgba(245, 222, 179, 0.384);
+    text-shadow: 0 0 8px black;
+}
+
+
 /*Pie de Pagina*/
 
 footer {
