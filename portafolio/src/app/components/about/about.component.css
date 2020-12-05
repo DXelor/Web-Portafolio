@@ -1,62 +1,15 @@
-/*sobre Mi*/
-
-#title{
-    width: 70%;
-    color: seashell;
-    text-shadow: 0 0 3px #01b947, 0 0 5px #23a3ca;
-    margin: 0px auto;
-    text-align: center;
+#title {
+    display: flex;
+    color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#title h1{
-    font-family: "AlexBrush", Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    border-bottom: 1px solid slategray;
-}
-
-#title h2{
-    font-size: 25px;
-    color: thistle;
-    margin-top: 50px;
-}
-
-#title a{
-    color: aliceblue;
-    font-size: 15px;
-    text-decoration: none;
-    text-shadow: 0 0 3px red;
-}
-
-article.about{
-    width: 70%;
-    margin: 0px auto;
-    margin-bottom: 20px;
-    font-size: 23px;
-}
-.about h2{
-    color: rgb(229, 230, 223);
-    text-shadow: 0 0 3px rgb(1, 117, 27);
-    border-bottom: 1px solid slategray;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-
-.about p{
-    color: rgb(237, 238, 224);
-    text-shadow: 0 0 3px rgb(1, 117, 27);
-    padding-top: 20px;
-    padding-bottom: 30px;
-    text-align: justify;
-}
-
-/* Seccion con formulario */
-
-.container {
-    padding-left: 30px;
-}
-
-.container h2{
-    display: block;
-    border-bottom: 5px;
-    margin-bottom: 15px;
+.about {
+    display: flex;
+    color: beige;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

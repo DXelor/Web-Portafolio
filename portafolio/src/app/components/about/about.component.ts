@@ -10,13 +10,13 @@ export class AboutComponent implements OnInit {
   public subtitle: string;
   public web: string;
 
-  constructor() {
-    this.title = "DXel0r";
-    this.subtitle = "Desarrollador web";
-    this.web = "https://github.com/dxelor";
+  constructor(){
+  	this.title = "Dxelor";
+  	this.subtitle = "Desarrollador web";
+  	this.web = "Github";
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

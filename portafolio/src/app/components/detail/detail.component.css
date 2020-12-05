@@ -1,36 +1,37 @@
 .container {
-    padding-left: 50px;
+    background: rgba(255, 255, 255, 0.253);
     display: flex;
-    color: bisque;
-    text-shadow: 0 0 5px rgb(35, 190, 190);
+    flex-direction: row;
 }
 
-.image img {
-    width: 700px;
-    height: 590px;
+.image {
+    width: 43vw;
+    background: rgba(255, 255, 0, 0.432);
+}
+
+img {
+    width: 100%;
 }
 
 .data {
-    padding-left: 25px;
+    width: 57vw;
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(95, 185, 21, 0.418);
 }
 
 .button-edit,
 .button-delete {
-    width: 50px;
-    border-radius: 10px;
     display: inline-flex;
-    font-size: 17px;
+    margin: 5px;
     padding: 10px;
-    margin: 20px;
-    text-decoration: none;
-    color: burlywood;
-    margin-top: 15px;
-    background: rgb(7, 88, 25);
-    box-shadow: 0 0 3px #68ff54, 0 0 5px #89ffff;
-    cursor: pointer;
+    background: rgba(0, 128, 0, 0.726);
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px black;
 }
 
-.button-delete:hover,
-.button-edit:hover {
-    box-shadow: inset 0 0 3px #68ff54, inset 0 0 5px #89ffff;
+.button-delete {
+    background: rgba(255, 0, 0, 0.575);
 }
