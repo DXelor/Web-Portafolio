@@ -7,17 +7,18 @@
         </p>
     </div>
 
-
     Tamaño del slider:
     <input type="number" [(ngModel)]="widthSlider" />
     <button (click)="cargarSlider()">Cargar slider</button>
     <button (click)="resetearSlider()">Resetear slider</button>
 
     <div *ngIf="anchuraToSlider">
-        <slider [anchura]="anchuraToSlider" [etiquetas]="captions" (conseguirAutor)="getAutor($event)">
-        </slider>
+        <slider [anchura]="anchuraToSlider" [etiquetas]="captions" (conseguirAutor)="getAutor($event)"></slider>
     </div>
 
-    {{autor.nombre + " " + autor.website}}
+    <div class="container" *ngIf="autor">
+        {{autor.nombre + " " + autor.website}}
+    </div>
+
 
 </div>

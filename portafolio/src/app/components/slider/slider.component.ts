@@ -18,7 +18,7 @@ export class SliderComponent implements OnInit {
 
     this.autor = {
       nombre: "Dxelor",
-      website: "github",
+      website: "github/DXelor.com",
       twitch: "Dxelor"
     };
 
@@ -26,20 +26,19 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
 		$("#logo").click(function(e){
-  		e.preventDefault();
+      e.preventDefault();
 
-  		$("header").css("background","green")
-  				   .css("height","50px");
-  	});
+      $("header").css("background","green");
+    });
 
-  	$('.galeria').bxSlider({
-	    mode: 'fade',
-	    captions: this.captions,
-	    slideWidth: this.anchura
-	  });
+    $('.galeria').bxSlider({
+      mode: 'fade',
+      captions: this.captions,
+      slideWidth: this.anchura
+    });
 
     // Lanzar evento
-     this.conseguirAutor.emit(this.autor);
+    this.conseguirAutor.emit(this.autor);
 
   }
 
