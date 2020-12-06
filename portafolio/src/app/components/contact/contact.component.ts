@@ -15,13 +15,24 @@ export class ContactComponent implements OnInit {
   @ViewChild('textos') textos;
 
   constructor() {
-  	this.captions = true;
-   }
+    this.captions = true;
+  }
 
   ngOnInit() {
-    $(document).ready(function(){
-      $('.slider').bxSlider();
-    });
+    var opcion_clasica = document.querySelector('#texto').innerHTML;
+    //alert(this.textos.nativeElement.textContent);
+  }
+
+  cargarSlider(){
+    this.anchuraToSlider = this.widthSlider;
+  }
+
+  resetearSlider(){
+    this.anchuraToSlider = false;
+  }
+
+  getAutor(event){
+    this.autor = event;
   }
 
 }

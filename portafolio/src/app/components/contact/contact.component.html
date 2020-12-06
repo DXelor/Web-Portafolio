@@ -7,10 +7,17 @@
         </p>
     </div>
 
-    <div class="slider" style="height: 60%;">
-        <img src="../../../assets/img/kevin.jpg">
-        <img src="../../../assets/img/sebastian.jpg">
-        <img src="../../../assets/img/stefan.jpg">
+
+    Tamaño del slider:
+    <input type="number" [(ngModel)]="widthSlider" />
+    <button (click)="cargarSlider()">Cargar slider</button>
+    <button (click)="resetearSlider()">Resetear slider</button>
+
+    <div *ngIf="anchuraToSlider">
+        <slider [anchura]="anchuraToSlider" [etiquetas]="captions" (conseguirAutor)="getAutor($event)">
+        </slider>
     </div>
+
+    {{autor.nombre + " " + autor.website}}
 
 </div>

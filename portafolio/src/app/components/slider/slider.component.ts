@@ -17,9 +17,9 @@ export class SliderComponent implements OnInit {
   constructor(){
 
     this.autor = {
-      nombre: "Víctor Robles",
-      website: "victorroblesweb.es",
-      youtube: "Victor Robles WEB"
+      nombre: "Dxelor",
+      website: "github",
+      twitch: "Dxelor"
     };
 
   }
