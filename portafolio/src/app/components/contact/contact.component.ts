@@ -19,20 +19,9 @@ export class ContactComponent implements OnInit {
    }
 
   ngOnInit() {
-    var opcion_clasica = document.querySelector('#texto').innerHTML;
-    //alert(this.textos.nativeElement.textContent);
-  }
-
-  cargarSlider(){
-  	this.anchuraToSlider = this.widthSlider;
-  }
-
-  resetearSlider(){
-  	this.anchuraToSlider = false;
-  }
-
-  getAutor(event){
-    this.autor = event;
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
   }
 
 }
