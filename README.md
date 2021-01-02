@@ -6,7 +6,8 @@ Practica de una Web-Portafolio desarrollada con Angular y NodeJS.
 Para renderizar la app seguir estos pasos:
 
 1) Entrar a la carpeta [backend] con el terminal y ejecutar el siguiente comando:
-             npm start {Inicia el servidor y se conecta a la base de datos}
+            
+          a) npm start {Inicia el servidor y se conecta a la base de datos}
 
 2) abrir otra terminal y entrar a la carpeta [portafolio] y ejecutar los siguientes comandos:
           
