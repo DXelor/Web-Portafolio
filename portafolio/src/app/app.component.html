@@ -4,18 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./app.component.css">
     <title>Portafolio</title>
+    <style>
+        .menuItem {
+            background: rgba(255, 255, 255, 0);
+        }
+        
+        .show {
+            display: none;
+        }
+        
+        .bxs-yin-yang {
+            font-size: 45px;
+            color: rgb(27, 27, 27);
+            text-shadow: white 0 0 5px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <script>
+        function esconder() {
+            alert("click logo");
+        }
+
+        function clicK() {
+            var logo = document.getElementById("logo");
+            logo.addEventListener("click", esconder, false);
+        }
+    </script>
     <header>
         <nav>
-            <ul>
-                <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre Mi</a></li>
-                <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
-                <li id="logo"><a href="#">DX</a></li>
-                <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear proyecto</a></li>
-                <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+            <h1 id="logo">Dxel<i class='bx bxs-yin-yang'></i>r</h1>
+            <ul class="menu">
+                <li><a class="menuItem" [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre Mi</a></li>
+                <li><a class="menuItem" [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
+            </ul>
+            <ul class="menu">
+                <li><a class="menuItem" [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear proyecto</a></li>
+                <li><a class="menuItem" [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -24,5 +54,6 @@
     </section>
     <footer>Master en JS de DXelor</footer>
 </body>
+
 
 </html>
