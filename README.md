@@ -1,15 +1,15 @@
 # Web-Portafolio
-Practica de una Web-Portafolio desarrollada con Angular y NodeJS.
+Practice of SPA (Single Page Application) With Angular & NodeJS.
 
-# Uso
+# Use
 
-Para renderizar la app seguir estos pasos:
+For rendering follow this steps:
 
-1) Entrar a la carpeta [backend] con el terminal y ejecutar el siguiente comando:
+1) go to archive [backend] with your terminal and launch the next command console:
             
-          a) npm start {Inicia el servidor y se conecta a la base de datos}
+          a) npm start {start the server and connects to the data base}
 
-2) abrir otra terminal y entrar a la carpeta [portafolio] y ejecutar los siguientes comandos:
+2) open a new terminal and enter in the file [portafolio] and launch the next command console:
           
-          a) npm install                    {Instala los paquetes npm que usa la app}
-          b) ng serve                       {compila la app angular y arranca el servidor}
+          a) npm install                    {Install the required npm packages}
+          b) ng serve                       {compile the Angular application and run the server}
