@@ -5,7 +5,7 @@ var app = require('./app');
 var port = 3700;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/portafolio', { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://127.0.0.1:27017/portafolio', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('conexion a base de atos establecida...');
         app.listen(port, () => {
